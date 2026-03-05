@@ -5,39 +5,30 @@ document.addEventListener("mousemove", e=>{
   glow.style.top=e.clientY+"px";
 });
 
-/* Terminal Animation */
+/* Terminal */
 const lines=[
-"Initializing portfolio...",
-"Access granted.",
-"Juan Esteban Alfonso — Full Stack Developer",
-"Building secure and scalable systems."
+"Inicializando portafolio...",
+"Acceso concedido.",
+"Juan Esteban Alfonso — Desarrollador Full Stack",
+"Arquitectura backend • Sistemas seguros • Plataformas escalables",
+"Proyecto principal: StarHotelHub.com"
 ];
 
 const output=document.getElementById("terminal-output");
+let i=0;
 
-let lineIndex=0;
 function printLine(){
-  if(lineIndex<lines.length){
+  if(i<lines.length){
     const div=document.createElement("div");
-    div.textContent=lines[lineIndex];
+    div.textContent=lines[i];
     output.appendChild(div);
-    lineIndex++;
+    i++;
     setTimeout(printLine,600);
   }
 }
 printLine();
 
-/* Stack animation */
-const stackText=`
-> stack --list
-Frontend: HTML5, CSS3, JavaScript
-Backend: PHP, MySQL, Python
-Tools: Git, REST APIs, Chart.js, Linux
-`;
-
-document.querySelector(".stack-output").textContent=stackText;
-
-/* Skills Animation */
+/* Skills dinámicas */
 const skills=[
 {label:"PHP",level:10},
 {label:"MySQL",level:9},
@@ -45,16 +36,16 @@ const skills=[
 {label:"Python",level:7}
 ];
 
-const skillsContainer=document.getElementById("skills-container");
+const container=document.getElementById("skills-container");
 
 skills.forEach(skill=>{
   let bar="█".repeat(skill.level)+"░".repeat(10-skill.level);
   let div=document.createElement("div");
   div.textContent=bar+" "+skill.label;
-  skillsContainer.appendChild(div);
+  container.appendChild(div);
 });
 
-/* Scroll Progress */
+/* Scroll progress */
 window.addEventListener("scroll",()=>{
   let winScroll=document.documentElement.scrollTop;
   let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;

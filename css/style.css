@@ -1,4 +1,5 @@
 *{margin:0;padding:0;box-sizing:border-box}
+
 body{
   font-family:'JetBrains Mono',monospace;
   background:#050505;
@@ -11,13 +12,13 @@ body{
   position:fixed;
   width:300px;
   height:300px;
-  background:radial-gradient(circle,rgba(0,255,136,0.15),transparent 70%);
+  background:radial-gradient(circle,rgba(0,255,136,.15),transparent 70%);
   pointer-events:none;
   transform:translate(-50%,-50%);
   z-index:-1;
 }
 
-/* Scroll Progress */
+/* Barra progreso */
 #progress{
   position:fixed;
   top:0;
@@ -37,14 +38,15 @@ nav{
   padding:15px 40px;
   background:rgba(5,5,5,.95);
   border-bottom:1px solid rgba(0,255,136,.15);
-  z-index:1000;
 }
+
 nav a{
   color:#00ff88;
   text-decoration:none;
   margin-left:20px;
   transition:.3s;
 }
+
 nav a:hover{
   text-shadow:0 0 6px #00ff88;
 }
@@ -57,6 +59,7 @@ nav a:hover{
   justify-content:center;
   padding:0 20px;
 }
+
 .terminal{
   border:1px solid rgba(0,255,136,.5);
   padding:40px;
@@ -64,15 +67,14 @@ nav a:hover{
   width:100%;
   box-shadow:0 0 20px rgba(0,255,136,.15);
 }
-.terminal-line{
-  display:flex;
-}
+
 .cursor{
   width:10px;
   height:20px;
   background:#00ff88;
   animation:blink 1s infinite;
 }
+
 @keyframes blink{50%{opacity:0}}
 
 .btn{
@@ -82,57 +84,59 @@ nav a:hover{
   text-decoration:none;
   color:#00ff88;
   transition:.2s;
+  background:transparent;
+  cursor:pointer;
 }
+
 .btn:hover{
   background:#00ff88;
   color:#050505;
   box-shadow:0 0 10px #00ff88;
 }
 
-/* Sections */
 section{padding:120px 50px}
+
 .section-box{
   border:1px solid rgba(0,255,136,.3);
   padding:40px;
   box-shadow:0 0 15px rgba(0,255,136,.1);
 }
 
-/* Projects */
 .projects-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:30px;
 }
+
 .card{
   border:1px solid rgba(0,255,136,.3);
   padding:25px;
   transition:.3s;
-  position:relative;
 }
+
 .card:hover{
   transform:translateY(-6px);
   box-shadow:0 0 20px rgba(0,255,136,.25);
 }
-.card:hover::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,255,136,.02);
-  mix-blend-mode:overlay;
+
+.tags span{
+  border:1px solid #00ff88;
+  padding:3px 8px;
+  margin-right:5px;
+  font-size:12px;
 }
 
-/* Reveal */
 .reveal{
   opacity:0;
   transform:translateY(40px);
   transition:all .8s ease;
 }
+
 .reveal.active{
   opacity:1;
   transform:translateY(0);
 }
 
-/* Inputs */
 input,textarea{
   width:100%;
   background:transparent;
@@ -142,6 +146,7 @@ input,textarea{
   padding:10px;
   margin-bottom:20px;
 }
+
 input:focus,textarea:focus{
   outline:none;
   box-shadow:0 2px 6px #00ff88;

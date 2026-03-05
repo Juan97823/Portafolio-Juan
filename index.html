@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Juan Esteban Alfonso | Backend & Cybersecurity Developer</title>
+<title>Juan Esteban Alfonso | Desarrollador Full Stack</title>
 
-<meta name="description" content="Juan Esteban Alfonso — Full Stack Developer specialized in backend architecture, authentication systems and scalable secure platforms.">
-<meta property="og:title" content="Juan Esteban Alfonso | Full Stack Developer">
-<meta property="og:description" content="Backend architecture, security systems and scalable web platforms.">
+<meta name="description" content="Juan Esteban Alfonso — Desarrollador Full Stack enfocado en backend, seguridad y plataformas escalables. Creador de StarHotelHub.">
+
+<meta property="og:title" content="Juan Esteban Alfonso | Desarrollador Full Stack">
+<meta property="og:description" content="Arquitectura backend, autenticación segura y sistemas escalables.">
 <meta property="og:type" content="website">
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%2200ff88%22>&gt;</text></svg>">
+<link rel="icon" type="image/svg+xml"
+href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%2300ff88'>&gt;</text></svg>">
 
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -25,9 +27,9 @@
 <nav>
   <div class="nav-left">juan@system:~$</div>
   <div class="nav-right">
-    <a href="#about">about</a>
-    <a href="#projects">projects</a>
-    <a href="#contact">contact</a>
+    <a href="#sobre">sobre</a>
+    <a href="#proyectos">proyectos</a>
+    <a href="#contacto">contacto</a>
   </div>
 </nav>
 
@@ -35,61 +37,76 @@
   <div class="terminal">
     <div id="terminal-output"></div>
     <div class="terminal-line">
-      <span class="prompt">></span>
       <span class="cursor"></span>
     </div>
 
     <div class="buttons">
-      <a href="#projects" class="btn">[ View_Projects ]</a>
-      <a href="#contact" class="btn">[ Contact_Me ]</a>
+      <a href="#proyectos" class="btn">[ Ver_Proyectos ]</a>
+      <a href="#contacto" class="btn">[ Contactar ]</a>
     </div>
   </div>
 </section>
 
-<section id="about" class="reveal">
+<section id="sobre" class="reveal">
   <div class="section-box">
-    <h2>> about_me</h2>
+    <h2>> sobre_mi</h2>
     <p>
-      Full Stack Developer specialized in backend architecture,
-      authentication systems, database design and scalable web platforms.
-      Focused on performance, security and clean system structure.
+      Desarrollador Full Stack enfocado en arquitectura backend,
+      autenticación segura, diseño de bases de datos
+      y construcción de plataformas web escalables.
     </p>
 
-    <div class="stack-output"></div>
+    <pre class="stack-output">
+> stack --list
+Frontend: HTML5, CSS3, JavaScript
+Backend: PHP, MySQL, Python
+Herramientas: Git, REST APIs, Linux
+    </pre>
   </div>
 </section>
 
-<section id="projects">
-  <h2>> projects</h2>
+<section id="proyectos">
+  <h2>> proyectos</h2>
 
   <div class="projects-grid">
 
     <div class="card reveal">
       <h3>StarHotelHub</h3>
-      <p>Hotel management system with role-based authentication, analytics dashboard and MVC backend.</p>
+      <p>
+        Plataforma de gestión hotelera con autenticación por roles,
+        panel administrativo con métricas,
+        motor de reservas y arquitectura MVC.
+      </p>
       <div class="tags">
         <span>PHP</span>
         <span>MySQL</span>
         <span>MVC</span>
-        <span>Chart.js</span>
-      </div>
-    </div>
-
-    <div class="card reveal">
-      <h3>AI Restaurant System</h3>
-      <p>AI-powered restaurant management and analytics concept.</p>
-      <div class="tags">
-        <span>Python</span>
-        <span>AI</span>
         <span>REST</span>
       </div>
+      <a href="https://www.starhotelhub.com" target="_blank" class="btn">[ Sitio_Web ]</a>
     </div>
 
     <div class="card reveal">
-      <h3>Secure Auth Dashboard</h3>
-      <p>Advanced authentication system with secure session handling.</p>
+      <h3>Sistema Restaurante IA</h3>
+      <p>
+        Sistema conceptual con análisis predictivo,
+        optimización operativa y visualización de datos.
+      </p>
       <div class="tags">
-        <span>Security</span>
+        <span>Python</span>
+        <span>IA</span>
+        <span>APIs</span>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <h3>Dashboard Autenticación Segura</h3>
+      <p>
+        Panel con gestión de sesiones,
+        JWT y monitoreo administrativo.
+      </p>
+      <div class="tags">
+        <span>Seguridad</span>
         <span>JWT</span>
         <span>PHP</span>
       </div>
@@ -100,19 +117,19 @@
 
 <section class="reveal">
   <div class="section-box">
-    <h2>> loading_skills</h2>
+    <h2>> habilidades</h2>
     <div id="skills-container"></div>
   </div>
 </section>
 
-<section id="contact" class="reveal">
+<section id="contacto" class="reveal">
   <div class="section-box">
-    <h2>> send_message --init</h2>
+    <h2>> enviar_mensaje --init</h2>
     <form>
-      <input type="text" placeholder="name" required>
-      <input type="email" placeholder="email" required>
-      <textarea rows="4" placeholder="message" required></textarea>
-      <button type="submit" class="btn">[ Execute ]</button>
+      <input type="text" placeholder="nombre" required>
+      <input type="email" placeholder="correo" required>
+      <textarea rows="4" placeholder="mensaje" required></textarea>
+      <button type="submit" class="btn">[ Ejecutar ]</button>
     </form>
 
     <div class="social">
