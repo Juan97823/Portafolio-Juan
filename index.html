@@ -2,119 +2,106 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Juan Esteban Alfonso | Full Stack Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio profesional de Juan Esteban Alfonso, desarrollador Full Stack especializado en backend y sistemas seguros.">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Juan Esteban Alfonso | Full Stack Developer</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="grid-bg"></div>
-<div class="cursor-glow"></div>
-<div class="scroll-line"></div>
+<div class="cursor"></div>
 
-<header class="navbar">
-  <div class="logo">JUAN_ALFONSO_08 v2.4</div>
-  <div class="status">STATUS: ONLINE</div>
+<header>
+  <nav class="navbar">
+    <div class="logo">JuanEsteban.dev</div>
+    <div class="nav-links">
+      <a href="#sobre-mi">Sobre Mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
 </header>
 
 <section class="hero">
-  <div class="terminal">
-    <div class="terminal-header">
-      <span class="dot red"></span>
-      <span class="dot yellow"></span>
-      <span class="dot green"></span>
-      <span class="terminal-title">bash — portfolio</span>
-    </div>
-    <div class="terminal-body" id="typing"></div>
+  <div class="hero-content">
+    <h1>Juan Esteban Alfonso</h1>
+    <p>Desarrollador Full Stack enfocado en backend, seguridad y sistemas escalables.</p>
+    <a href="#proyectos" class="btn-primary">Explorar Proyectos</a>
   </div>
-
-  <div class="cta">
-    <a href="#projects" class="btn">[ VIEW_PROJECTS ]</a>
-    <a href="#contact" class="btn outline">[ CONTACT_ME ]</a>
-  </div>
+  <div class="hero-bg"></div>
 </section>
 
-<section class="about">
-  <h2>[01] SYSTEM_ABOUT</h2>
+<section id="sobre-mi" class="section reveal">
+  <h2>Sobre Mí</h2>
   <p>
-    Full Stack Developer especializado en arquitectura backend,
-    sistemas de autenticación y plataformas escalables.
-    Enfoque en rendimiento, seguridad y estructura limpia.
+    Especializado en arquitectura backend, autenticación segura,
+    diseño de APIs REST y bases de datos optimizadas.
+    Desarrollo plataformas estructuradas bajo MVC con enfoque en rendimiento y seguridad.
   </p>
 </section>
 
-<section id="projects" class="projects">
-  <h2>[02] DEPLOYED_PROJECTS</h2>
+<section id="proyectos" class="section reveal">
+  <h2>Proyectos</h2>
 
-  <div class="card">
-    <div class="preview fake-preview"></div>
-    <h3>STARHOTELHUB</h3>
-    <p>Sistema hotelero con autenticación por roles, dashboard admin,
-       motor de reservas y arquitectura MVC.</p>
-    <div class="tags">
-      <span>PHP</span>
-      <span>MYSQL</span>
-      <span>MVC</span>
+  <div class="projects-grid">
+
+    <div class="card">
+      <h3>StarHotelHub</h3>
+      <p>Sistema hotelero con roles, dashboard administrativo y reservas dinámicas.</p>
+      <a href="https://www.starhotelhub.com" target="_blank">Ver Proyecto</a>
     </div>
-    <a href="https://www.starhotelhub.com" target="_blank" class="btn small">[ VISIT_SITE ]</a>
+
+    <div class="card">
+      <h3>Sistema Restaurante IA</h3>
+      <p>Modelo predictivo para optimización de inventarios.</p>
+      <a href="#">Ver Proyecto</a>
+    </div>
+
+    <div class="card">
+      <h3>Secure Auth Dashboard</h3>
+      <p>Panel de autenticación con JWT y monitoreo de sesiones.</p>
+      <a href="#">Ver Proyecto</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="habilidades" class="section reveal">
+  <h2>Habilidades</h2>
+
+  <div class="skill">
+    <span>PHP</span>
+    <div class="bar"><div data-width="90%"></div></div>
   </div>
 
-  <div class="card">
-    <div class="preview fake-preview"></div>
-    <h3>AI_RESTO_SYSTEM</h3>
-    <p>Sistema conceptual con análisis predictivo
-       para optimización operativa.</p>
-    <div class="tags">
-      <span>PYTHON</span>
-      <span>AI</span>
-    </div>
+  <div class="skill">
+    <span>MySQL</span>
+    <div class="bar"><div data-width="85%"></div></div>
   </div>
 
-  <div class="card">
-    <div class="preview fake-preview"></div>
-    <h3>SECURE_AUTH_PANEL</h3>
-    <p>Dashboard con JWT, gestión de sesiones y monitoreo
-       administrativo.</p>
-    <div class="tags">
-      <span>JWT</span>
-      <span>SECURITY</span>
-    </div>
+  <div class="skill">
+    <span>JavaScript</span>
+    <div class="bar"><div data-width="80%"></div></div>
   </div>
 
 </section>
 
-<section class="skills">
-  <h2>[03] SYSTEM_CAPABILITIES</h2>
-  <div class="skill">BACKEND_ARCH <span>92%</span></div>
-  <div class="bar"><div style="width:92%"></div></div>
-
-  <div class="skill">DATABASE_OPS <span>88%</span></div>
-  <div class="bar"><div style="width:88%"></div></div>
-
-  <div class="skill">SEC_HARDENING <span>85%</span></div>
-  <div class="bar"><div style="width:85%"></div></div>
-
-  <div class="skill">UI_ENGINEERING <span>70%</span></div>
-  <div class="bar"><div style="width:70%"></div></div>
-</section>
-
-<section id="contact" class="contact">
-  <h2>[04] CONTACT_INIT</h2>
-
-  <form>
-    <input type="text" placeholder="your_name">
-    <input type="email" placeholder="email@server.com">
-    <textarea placeholder="Enter message payload..."></textarea>
-    <button type="submit" class="btn">[ EXECUTE_MESSAGE_SEND ]</button>
+<section id="contacto" class="section reveal">
+  <h2>Contacto</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Tu Nombre">
+    <input type="email" placeholder="Tu Correo">
+    <textarea placeholder="Mensaje"></textarea>
+    <button type="submit" class="btn-primary">Enviar</button>
   </form>
 </section>
 
 <footer>
-  © 2024 JUAN ESTEBAN ALFONSO — ALL RIGHTS RESERVED.
+  © 2026 Juan Esteban Alfonso
 </footer>
 
-<script src="script.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
