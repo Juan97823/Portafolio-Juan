@@ -3,22 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juan Esteban Alfonso | Full Stack Developer</title>
 
-<meta name="description" content="Juan Esteban Alfonso — Full Stack Developer specialized in backend architecture, authentication systems and scalable platforms.">
-<meta name="keywords" content="Full Stack Developer, Backend Engineer, PHP, MySQL, Cybersecurity">
-<meta name="author" content="Juan Esteban Alfonso">
+<title>Juan Esteban Alfonso | Backend & Cybersecurity Developer</title>
+
+<meta name="description" content="Juan Esteban Alfonso — Full Stack Developer specialized in backend architecture, authentication systems and scalable secure platforms.">
+<meta property="og:title" content="Juan Esteban Alfonso | Full Stack Developer">
+<meta property="og:description" content="Backend architecture, security systems and scalable web platforms.">
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%2200ff88%22>&gt;</text></svg>">
 
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <div id="progress"></div>
+<div class="cursor-glow"></div>
 
 <nav>
-  <div>juan@portfolio:~$</div>
-  <div>
+  <div class="nav-left">juan@system:~$</div>
+  <div class="nav-right">
     <a href="#about">about</a>
     <a href="#projects">projects</a>
     <a href="#contact">contact</a>
@@ -27,7 +33,12 @@
 
 <section class="hero">
   <div class="terminal">
-    <div id="typed"></div><span class="cursor"></span>
+    <div id="terminal-output"></div>
+    <div class="terminal-line">
+      <span class="prompt">></span>
+      <span class="cursor"></span>
+    </div>
+
     <div class="buttons">
       <a href="#projects" class="btn">[ View_Projects ]</a>
       <a href="#contact" class="btn">[ Contact_Me ]</a>
@@ -35,7 +46,7 @@
   </div>
 </section>
 
-<section id="about">
+<section id="about" class="reveal">
   <div class="section-box">
     <h2>> about_me</h2>
     <p>
@@ -44,19 +55,16 @@
       Focused on performance, security and clean system structure.
     </p>
 
-    <br>
-    <p>> stack --list</p>
-    <p>Frontend: HTML5, CSS3, JavaScript</p>
-    <p>Backend: PHP, MySQL, Python</p>
-    <p>Tools: Git, REST APIs, Chart.js, Linux</p>
+    <div class="stack-output"></div>
   </div>
 </section>
 
 <section id="projects">
   <h2>> projects</h2>
+
   <div class="projects-grid">
 
-    <div class="card">
+    <div class="card reveal">
       <h3>StarHotelHub</h3>
       <p>Hotel management system with role-based authentication, analytics dashboard and MVC backend.</p>
       <div class="tags">
@@ -67,9 +75,9 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card reveal">
       <h3>AI Restaurant System</h3>
-      <p>AI-powered restaurant management and analytics system concept.</p>
+      <p>AI-powered restaurant management and analytics concept.</p>
       <div class="tags">
         <span>Python</span>
         <span>AI</span>
@@ -77,9 +85,9 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card reveal">
       <h3>Secure Auth Dashboard</h3>
-      <p>Advanced authentication dashboard with token security and session management.</p>
+      <p>Advanced authentication system with secure session handling.</p>
       <div class="tags">
         <span>Security</span>
         <span>JWT</span>
@@ -90,29 +98,27 @@
   </div>
 </section>
 
-<section>
+<section class="reveal">
   <div class="section-box">
     <h2>> loading_skills</h2>
-    <div class="skill-line">██████████ PHP</div>
-    <div class="skill-line">█████████░ MySQL</div>
-    <div class="skill-line">████████░░ JavaScript</div>
-    <div class="skill-line">███████░░░ Python</div>
+    <div id="skills-container"></div>
   </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="reveal">
   <div class="section-box">
     <h2>> send_message --init</h2>
     <form>
-      <input type="text" placeholder="name">
-      <input type="email" placeholder="email">
-      <textarea rows="4" placeholder="message"></textarea>
+      <input type="text" placeholder="name" required>
+      <input type="email" placeholder="email" required>
+      <textarea rows="4" placeholder="message" required></textarea>
       <button type="submit" class="btn">[ Execute ]</button>
     </form>
 
-    <br>
-    <p>github</p>
-    <p>linkedin</p>
+    <div class="social">
+      <p>github</p>
+      <p>linkedin</p>
+    </div>
   </div>
 </section>
 
