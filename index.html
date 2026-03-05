@@ -1,52 +1,125 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juan Esteban Alfonso | Backend Developer</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juan Esteban Alfonso | Full Stack Developer</title>
 
-  <!-- Fuente moderna -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<meta name="description" content="Juan Esteban Alfonso — Full Stack Developer specialized in backend architecture, authentication systems and scalable platforms.">
+<meta name="keywords" content="Full Stack Developer, Backend Engineer, PHP, MySQL, Cybersecurity">
+<meta name="author" content="Juan Esteban Alfonso">
+
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="cursor"></div>
+<div id="progress"></div>
 
-<header class="hero">
-  <h1 class="reveal">Juan Esteban Alfonso</h1>
-  <h2 class="reveal delay-1">Backend Developer</h2>
-  <p class="reveal delay-2">
-    Construyo sistemas web escalables con arquitectura sólida y bases de datos optimizadas.
-  </p>
-  <a href="#proyectos" class="btn reveal delay-3">Ver proyectos</a>
-</header>
+<nav>
+  <div>juan@portfolio:~$</div>
+  <div>
+    <a href="#about">about</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
 
-<section id="sobre-mi" class="section">
-  <h2>Sobre mí</h2>
-  <p>
-    Desarrollador enfocado en backend con experiencia en PHP, MySQL y arquitectura MVC.
-    Actualmente construyo StarHotelHub, una plataforma de gestión hotelera completa.
-  </p>
-</section>
-
-<section id="proyectos" class="section">
-  <h2>Proyecto Destacado</h2>
-
-  <div class="card">
-    <h3>StarHotelHub</h3>
-    <p>
-      Sistema de gestión hotelera con autenticación segura,
-      dashboard administrativo y gestión completa de reservas.
-    </p>
-    <ul>
-      <li>Arquitectura MVC</li>
-      <li>Login con password_hash</li>
-      <li>Panel con métricas dinámicas</li>
-    </ul>
+<section class="hero">
+  <div class="terminal">
+    <div id="typed"></div><span class="cursor"></span>
+    <div class="buttons">
+      <a href="#projects" class="btn">[ View_Projects ]</a>
+      <a href="#contact" class="btn">[ Contact_Me ]</a>
+    </div>
   </div>
 </section>
 
-<script src="script.js"></script>
+<section id="about">
+  <div class="section-box">
+    <h2>> about_me</h2>
+    <p>
+      Full Stack Developer specialized in backend architecture,
+      authentication systems, database design and scalable web platforms.
+      Focused on performance, security and clean system structure.
+    </p>
+
+    <br>
+    <p>> stack --list</p>
+    <p>Frontend: HTML5, CSS3, JavaScript</p>
+    <p>Backend: PHP, MySQL, Python</p>
+    <p>Tools: Git, REST APIs, Chart.js, Linux</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>> projects</h2>
+  <div class="projects-grid">
+
+    <div class="card">
+      <h3>StarHotelHub</h3>
+      <p>Hotel management system with role-based authentication, analytics dashboard and MVC backend.</p>
+      <div class="tags">
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>MVC</span>
+        <span>Chart.js</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>AI Restaurant System</h3>
+      <p>AI-powered restaurant management and analytics system concept.</p>
+      <div class="tags">
+        <span>Python</span>
+        <span>AI</span>
+        <span>REST</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Secure Auth Dashboard</h3>
+      <p>Advanced authentication dashboard with token security and session management.</p>
+      <div class="tags">
+        <span>Security</span>
+        <span>JWT</span>
+        <span>PHP</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="section-box">
+    <h2>> loading_skills</h2>
+    <div class="skill-line">██████████ PHP</div>
+    <div class="skill-line">█████████░ MySQL</div>
+    <div class="skill-line">████████░░ JavaScript</div>
+    <div class="skill-line">███████░░░ Python</div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-box">
+    <h2>> send_message --init</h2>
+    <form>
+      <input type="text" placeholder="name">
+      <input type="email" placeholder="email">
+      <textarea rows="4" placeholder="message"></textarea>
+      <button type="submit" class="btn">[ Execute ]</button>
+    </form>
+
+    <br>
+    <p>github</p>
+    <p>linkedin</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Juan Esteban Alfonso
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
